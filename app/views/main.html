@@ -1,0 +1,20 @@
+<h1>Guess Who: Pivot Edition</h1>
+
+<div class="container">
+  <div class="row">
+    <div id="player-1" >
+
+      <div class="row" ng-repeat="pivotRow in player1Rows">
+        <img ng-click="pivot.url = 'images/pivotallabslogo.jpg'" src="{{ pivot.url }}"  ng-repeat="pivot in pivotRow">
+      </div>
+
+    </div>
+
+    <div id="player-2">
+      <div class="row" ng-repeat="pivotRow in player2Rows">
+        <img ng-click="pivot.url = 'images/pivotallabslogo.jpg'" src="{{ pivot.url }}" ng-repeat="pivot in pivotRow">
+      </div>
+
+    </div>
+  </div>
+</div>
